@@ -14,7 +14,10 @@ function DropdownMenu() {
         <p>Menu</p>
       </div>
       <div className={open? "DropdownMenuContainerVisible" : (firstOpen? "DropdownMenuContainerInvisible" : "Invisible")}>
-        <p>This is some example text!</p>
+        <ul>
+          <li>This is some example text!</li>
+          <li>This is a longer example text!</li>
+        </ul>
       </div>
     </div>
   )
