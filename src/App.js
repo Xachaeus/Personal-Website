@@ -1,39 +1,24 @@
 import React from 'react';
 import './App.css';
 import './Style/app.css';
+import { HeaderBar } from './Components/HeaderBar.js';
+import { Home } from './Pages/Home.js';
+import { About } from './Pages/About.js';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
-
-function DropdownMenu() {
-  const [open, setOpen] = React.useState(false);
-  const [firstOpen, setFirstOpen] = React.useState(false);
-  return (
-    <div>
-      <div className="DropdownMenuButtonParent">
-        <button className="DropdownMenuButton" onClick={() => {setOpen(!open); setFirstOpen(true)}}>...</button>
-        <p>Menu</p>
-      </div>
-      <div className={open? "DropdownMenuContainerVisible" : (firstOpen? "DropdownMenuContainerInvisible" : "Invisible")}>
-        <ul>
-          <li>This is some example text!</li>
-          <li>This is a longer example text!</li>
-        </ul>
-      </div>
-    </div>
-  )
-
-}
 
 function App() {
   return (
-    <div className="HomeBackground">
-      <header className="HeaderBar">
-        <DropdownMenu/>
-        
-        <p>Zachariah Sollenberger</p>
-        
-      </header>
-      <p>This site is still in production; please come back later to see the completed site!</p>
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/about" element={<About/>}/>
+        </Routes>
+        <HeaderBar/>
+      </BrowserRouter>
+      
     </div>
   );
 }
