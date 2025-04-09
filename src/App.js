@@ -10,7 +10,6 @@ import { Project2 } from './Pages/Project2.js';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
-
 function App() {
   return (
       <BrowserRouter>
