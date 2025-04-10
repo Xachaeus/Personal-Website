@@ -7,6 +7,7 @@ import { About } from './Pages/About.js';
 import { Projects } from './Pages/Projects.js';
 import { Project1 } from './Pages/Project1.js';
 import { Project2 } from './Pages/Project2.js';
+import { Blog } from './Pages/Blog.js';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
@@ -21,6 +22,7 @@ function App() {
           <Route path="/projects" element={<Projects/>}/>
             <Route path="/projects/project1" element={<Project1/>}/>
             <Route path="/projects/project2" element={<Project2/>}/>
+          <Route path="/blog" element={<Blog/>}/>
         </Routes>
       </BrowserRouter>
   );
