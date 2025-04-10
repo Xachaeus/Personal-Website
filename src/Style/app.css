@@ -1,0 +1,192 @@
+
+:root {
+    --min-height: 60px;
+    --rel-height: 8vh;
+    --max-height: 80px;
+}
+:root {
+    --header-min-height: max(var(--min-height), var(--rel-height));
+    --header-height: min(var(--header-min-height), var(--max-height));
+}
+    
+
+
+.Invisible {
+    opacity: 0;
+    position: absolute;
+    top: -200px;
+}
+
+.HeaderBar { 
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    height: var(--header-height);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    background-color: rgba(39, 107, 39, 0.6);
+    backdrop-filter: blur(10px);
+    
+}
+
+.HomeBackground {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #091d09;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    bottom: 0;
+    color: #eeeecc;
+    font-size: 22pt;
+    z-index: 1;
+}
+
+
+
+.DropdownMenuButtonParent {
+    height: var(--header-height);
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 1001;
+    margin: 0;
+    padding: 0px;
+    display: flex;
+}
+.DropdownMenuButtonImage {
+    height: var(--header-height);
+    aspect-ratio: 1/1;
+}
+.DropdownMenuButtonParent p {
+    flex: 1;
+    align-self: center;
+    padding-left: 10px;
+    color: #ffeeee
+}
+
+.DropdownMenuButton {
+    flex: 1;
+    transition-duration: 0.25s;
+    height: 100%;
+    aspect-ratio: 1/1;
+    border: 0px;
+    background-color: #113311;
+    color: #ffeeee;
+    font-size: calc(10px + 2vmin);
+    opacity: 1;
+}
+.DropdownMenuButton:hover {
+    transition-duration: 0.25s;
+    background-color: #082208;
+    color: #dddddd;
+}
+.DropdownMenuButton:active {
+    background-color: #001100;
+}
+
+
+
+.DropdownMenuContainerVisible {
+    animation: slideDown 0.25s;
+    position: fixed;
+    left: 0;
+    top: var(--header-height);
+    width: 150px;
+    z-index: 1001;
+    backdrop-filter: blur(10px);
+}
+.DropdownMenuContainerInvisible {
+    animation: slideUp 0.5s;
+    position: fixed;
+    left: -500px;
+    top: var(--header-height);
+    width: 150px;
+    z-index: 1001;
+    backdrop-filter: blur(10px);
+}
+
+
+.DropdownMenuContainerVisible ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    font-size: 18pt;
+}
+.DropdownMenuContainerInvisible ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    font-size: 18pt;
+}
+
+
+.DropdownMenuContainerVisible li {
+    color: #ffffff;
+    background-color: rgba(26, 73, 26, 0.7);
+}
+.DropdownMenuContainerVisible li:hover {
+    background-color: rgba(26, 73, 26, 0.8);
+}
+.DropdownMenuContainerInvisible li {
+    color: #ffffff;
+    background-color: rgba(26, 73, 26, 0.7);
+}
+.DropdownMenuContainerInvisible li:hover {
+    background-color: rgba(26, 73, 26, 0.8);
+}
+
+
+.MenuLink {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #eeeecc;
+    font-weight: normal;
+    display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.MenuLink:hover {
+    font-weight: bold;
+}
+
+.MenuSubLink {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #eeeecc;
+    font-weight: normal;
+    display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.MenuSubLink:hover {
+    font-weight: bold;
+}
+.MenuSubLink::before {
+    content: " -- ";
+}
+
+@keyframes slideDown {
+    from {left: -500px;}
+    to {left: 0px;}
+}
+
+@keyframes slideUp {
+    from {left: 0px;}
+    to {left: -500px;}
+}
+

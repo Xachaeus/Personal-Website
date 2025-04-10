@@ -1,0 +1,83 @@
+
+.PictureBackgroundContainer {
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    background-color: #091d09;
+    display: flex;
+}
+
+.PictureBackgroundImage {
+    margin-left: auto;
+    aspect-ratio: 3/4;
+    max-width: 60%;
+    max-height: 1500px;
+    z-index: 1;
+    border-radius: 0;
+    border-width: 0;
+}
+
+.PictureBackgroundText {
+    float: left;
+    width: stretch;
+    color: #ffffff;
+    padding-top: var(--header-height);
+    padding-left: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 40px 0px 40px 40px #091d09;
+    z-index: 2;
+}
+
+.PictureBackgroundText h1 {
+    font-size: 32pt;
+    animation: fadein 1.5s;
+}
+
+.PictureBackgroundText p1 {
+    font-size: 18pt;
+    animation: fadein 1.5s;
+    padding-top: 10px;
+}
+
+.PictureBackgroundText p2 {
+    font-size: 18pt;
+    animation: fadein 1.5s;
+    padding-top: 10px;
+}
+
+@keyframes fadein {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+.ExploreSection {
+    width: 100%;
+    background-color: #ccffbb;
+    position: relative;
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.ExploreHeaderContainer {
+    background-color: #aaddaa;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 20px;
+}
+
+.ExploreSection h1 {
+    font-size: 32pt;
+}
+
+.ExploreSection p {
+    font-size: 18pt;
+}
