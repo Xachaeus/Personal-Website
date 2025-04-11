@@ -37,13 +37,7 @@
     animation: fadein 1.5s;
 }
 
-.PictureBackgroundText p1 {
-    font-size: 18pt;
-    animation: fadein 1.5s;
-    padding-top: 10px;
-}
-
-.PictureBackgroundText p2 {
+.PictureBackgroundText p {
     font-size: 18pt;
     animation: fadein 1.5s;
     padding-top: 10px;
@@ -76,8 +70,57 @@
 
 .ExploreSection h1 {
     font-size: 32pt;
+    margin-bottom: 10px;
 }
 
 .ExploreSection p {
+    margin-top: 5px;
     font-size: 18pt;
+}
+
+.ExploreTile {
+    width: 80%;
+    max-width: 800px;
+    height: 200px;
+    background-color: #204420;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ExploreTile h1 {
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.ExploreDesc {
+
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.ExploreDesc p {
+    color: white;
+    margin-top: 5px;
+}
+
+.ExploreDesc a {
+    width: 80px;
+    min-width: 80px;
+    color: white;
+    text-decoration: none;
+    background-color: #122512;
+    font-size: 18pt;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    display: block;
 }

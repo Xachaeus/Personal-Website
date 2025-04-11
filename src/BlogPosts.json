@@ -1,5 +1,10 @@
 [
     {
+        "title": "Updates to Site Layout",
+        "date": "4/11/2025",
+        "content": "I'm currently working on some layout changes to make sure different elements don't overlap other unnecessarily. I'm also not convinced that the footer is actually working correctly so I'm removing it for now. I think I'll make a separate piece of software later to create these blog posts cause editing them directly in the JSON file is kind of a pain, and I want to include images at some point too."
+    },
+    {
         "title": "Third Post is here. No more fun.",
         "content": "The third post is up now. Things aren't fun anymore. Now everything is business. Serious business.",
         "date": "4/11/2025"

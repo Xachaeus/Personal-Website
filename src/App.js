@@ -43,9 +43,11 @@ function App() {
             }
           </Routes>
         </main>
+        {/*
         <footer className="Footer">
           <p>Zachariah Sollenberger, 2025</p>
         </footer>
+        */}
       </BrowserRouter>
     </div>
   );

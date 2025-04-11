@@ -31,14 +31,17 @@ export function Blog() {
 
     return (
         <div className="HomeBackground">
-            {posts.map((post, index) => {
-                let path = post.title.toLowerCase()
-                return (
-                <div className="BlogTile">
-                    <Link to={"/blog/".concat(path)}>{post.title}</Link><p>{post.date}</p>
-                </div>
-                )
-            })}
+            <div className="BlogPage">
+                <h1>Blog</h1>
+                {posts.map((post, index) => {
+                    let path = post.title.toLowerCase()
+                    return (
+                    <div className="BlogTile">
+                        <Link to={"/blog/".concat(path)}><h1>{post.title}</h1><p>{post.date}</p></Link>
+                    </div>
+                    )
+                })}
+            </div>
         </div>
     )
 
