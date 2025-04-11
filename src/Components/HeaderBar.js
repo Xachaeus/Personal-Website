@@ -21,8 +21,8 @@ export function DropdownMenu() {
           <li onClick={() => setOpen(false)}><Link className="MenuLink" to="/">Home</Link></li>
           <li onClick={() => setOpen(false)}><Link className="MenuLink" to="/about">About</Link></li>
           <li onClick={() => setOpen(false)}><Link className="MenuLink" to="/projects">Projects</Link></li>
-          <li onClick={() => setOpen(false)}><Link className="MenuSubLink" to="/projects/project1">Project 1</Link></li>
-          <li onClick={() => setOpen(false)}><Link className="MenuSubLink" to="/projects/project2">Project 2</Link></li>
+          <li onClick={() => setOpen(false)}><Link className="MenuSubLink" to="/projects/n-tea">N-TEA</Link></li>
+          <li onClick={() => setOpen(false)}><Link className="MenuSubLink" to="/projects/llm4vv">LLM4VV</Link></li>
           <li onClick={() => setOpen(false)}><Link className="MenuLink" to="/blog">Blog</Link></li>
         </ul>
       </div>

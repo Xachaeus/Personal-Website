@@ -7,13 +7,18 @@ import BackgroundImage from '../Images/profile.jpg';
 
 export function Home() {
 
+    const OpeningText = "Meet The Greatest Programmer Who Ever Lived";
+    const P1 = "This site is still in production.";
+
+    const ExploreP1 = "Take a look at some of my projects and recent accomplishments!";
+
     return (
         <div>
             <BrowserView>
                 <div className="PictureBackgroundContainer">
                     <div className="PictureBackgroundText">
-                        <h1>Meet The Greatest Programmer Who Ever Lived</h1>
-                        <p1>This site is still in production.</p1>
+                        <h1>{OpeningText}</h1>
+                        <p1>{P1}</p1>
                         <p2>Come back later to see the full site!</p2>
                     </div>
                     <img className="PictureBackgroundImage" src={BackgroundImage} alt="Profile"/>
@@ -21,7 +26,7 @@ export function Home() {
 
                 <div className="ExploreSection">
                     <h1>Explore</h1>
-                    <p>This is a bit of text in the explore section!</p>
+                    <p>{ExploreP1}</p>
                 </div>
             </BrowserView>
             <MobileView>
@@ -34,7 +39,7 @@ export function Home() {
                 </div>
                 <div className="ExploreSection">
                     <h1>Explore</h1>
-                    <p>This is a bit of text in the explore section!</p>
+                    <p>{ExploreP1}</p>
                 </div>
             </MobileView>
         </div>

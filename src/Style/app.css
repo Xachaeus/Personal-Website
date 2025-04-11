@@ -1,4 +1,6 @@
-
+body, html {
+    height: 100%;
+}
 :root {
     --min-height: 60px;
     --rel-height: 8vh;
@@ -190,3 +192,30 @@
     to {left: -500px;}
 }
 
+.ContentWrapper {
+    display: flex;
+    flex-flow: column;
+    height: 100vh;
+    margin: 0;
+}
+
+main {
+    flex: 1;
+}
+
+.Footer {
+    width: 100%;
+    height: 50px;
+    background-color: #001800;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1000;
+}
+
+.Footer p {
+    font-size: 8pt;
+    color: white;
+}
