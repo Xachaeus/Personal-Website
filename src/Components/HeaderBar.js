@@ -35,7 +35,7 @@ export function HeaderBar() {
         <header className="HeaderBar">
 
             <BrowserView>
-                <Link className="MenuLink" to="/">Zachariah Sollenberger</Link>
+                <Link className="TitleLink" to="/">Zachariah Sollenberger</Link>
             </BrowserView>
                 
         </header>
